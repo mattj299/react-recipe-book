@@ -445,7 +445,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename="/recipe-book">
         <>
           <div className="no-footer-content">
             <Popup popupText={this.state.popupText} />

@@ -12,7 +12,7 @@ import RecipeInformation from "./components/RecipeInformation";
 import EditRecipe from "./components/EditRecipe";
 import Footer from "./components/Footer";
 
-import LoadedGuacamoleTacos from "./images/loaded-guacamole-vegetarian-tacos.jpg";
+import LoadedGuacTacos from "./images/loaded-guac-veg-tacos.jpg";
 import GreenCurry from "./images/thai-green-curry.jpg";
 
 class App extends React.Component {
@@ -45,7 +45,7 @@ class App extends React.Component {
           ],
           instructions:
             "Mash the avocado in a medium bowl with a fork (or molcajete) until it reaches your desired consistency, chunky or smooth. Add a small squeeze each of lime and lemon juice. Mix well and taste. Add more lime juice, lemon juice, and salt as you like. Add the black bean ingredients to a 2 quart sauce pot and heat over medium-low until hot. Turn off the heat and allow to cool to a very warm, eatable temp. If tortillas aren't soft and pliable (or if you like your tortillas warm), stack them on microwaveable plate, separate with paper towels, heat for 20 to 30 seconds. Line half of each tortilla with lettuce. Spoon the black bean mixture over the lettuce (on half of the tortilla). Spoon guacamole on the other half. Top with a few shakes of hot sauce (optional) and a sprinkle of cilantro. Serve with lemon and lime wedges.",
-          img: LoadedGuacamoleTacos,
+          img: LoadedGuacTacos,
           source:
             "http://soupaddict.com/2014/06/loaded-guacamole-vegetarian-tacos/",
         },

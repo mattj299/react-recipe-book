@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/recipe-book/static/css/main.a02b636b.chunk.css",
-    "main.js": "/recipe-book/static/js/main.da6ef55f.chunk.js",
-    "main.js.map": "/recipe-book/static/js/main.da6ef55f.chunk.js.map",
+    "main.js": "/recipe-book/static/js/main.036a6521.chunk.js",
+    "main.js.map": "/recipe-book/static/js/main.036a6521.chunk.js.map",
     "runtime-main.js": "/recipe-book/static/js/runtime-main.52f5807f.js",
     "runtime-main.js.map": "/recipe-book/static/js/runtime-main.52f5807f.js.map",
-    "static/js/2.bce34500.chunk.js": "/recipe-book/static/js/2.bce34500.chunk.js",
-    "static/js/2.bce34500.chunk.js.map": "/recipe-book/static/js/2.bce34500.chunk.js.map",
+    "static/js/2.5444dde8.chunk.js": "/recipe-book/static/js/2.5444dde8.chunk.js",
+    "static/js/2.5444dde8.chunk.js.map": "/recipe-book/static/js/2.5444dde8.chunk.js.map",
     "index.html": "/recipe-book/index.html",
-    "precache-manifest.64715279a801dff50846937b3c0caae3.js": "/recipe-book/precache-manifest.64715279a801dff50846937b3c0caae3.js",
+    "precache-manifest.f317306e0c408e58ca86a0ad263c775d.js": "/recipe-book/precache-manifest.f317306e0c408e58ca86a0ad263c775d.js",
     "service-worker.js": "/recipe-book/service-worker.js",
     "static/css/main.a02b636b.chunk.css.map": "/recipe-book/static/css/main.a02b636b.chunk.css.map",
-    "static/js/2.bce34500.chunk.js.LICENSE.txt": "/recipe-book/static/js/2.bce34500.chunk.js.LICENSE.txt"
+    "static/js/2.5444dde8.chunk.js.LICENSE.txt": "/recipe-book/static/js/2.5444dde8.chunk.js.LICENSE.txt",
+    "static/media/loaded-guacamole-vegetarian-tacos.jpg": "/recipe-book/static/media/loaded-guacamole-vegetarian-tacos.1e068f6a.jpg",
+    "static/media/thai-green-curry.jpg": "/recipe-book/static/media/thai-green-curry.8424ea0f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.52f5807f.js",
-    "static/js/2.bce34500.chunk.js",
+    "static/js/2.5444dde8.chunk.js",
     "static/css/main.a02b636b.chunk.css",
-    "static/js/main.da6ef55f.chunk.js"
+    "static/js/main.036a6521.chunk.js"
   ]
 }

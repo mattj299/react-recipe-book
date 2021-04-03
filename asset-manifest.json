@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/recipe-book/static/css/main.0aa7ad42.chunk.css",
-    "main.js": "/recipe-book/static/js/main.4f43614d.chunk.js",
-    "main.js.map": "/recipe-book/static/js/main.4f43614d.chunk.js.map",
+    "main.css": "/recipe-book/static/css/main.0d772db6.chunk.css",
+    "main.js": "/recipe-book/static/js/main.9b985054.chunk.js",
+    "main.js.map": "/recipe-book/static/js/main.9b985054.chunk.js.map",
     "runtime-main.js": "/recipe-book/static/js/runtime-main.52f5807f.js",
     "runtime-main.js.map": "/recipe-book/static/js/runtime-main.52f5807f.js.map",
     "static/js/2.5444dde8.chunk.js": "/recipe-book/static/js/2.5444dde8.chunk.js",
     "static/js/2.5444dde8.chunk.js.map": "/recipe-book/static/js/2.5444dde8.chunk.js.map",
     "index.html": "/recipe-book/index.html",
-    "precache-manifest.be1bff30e935b3c90f68b5266c11dbf9.js": "/recipe-book/precache-manifest.be1bff30e935b3c90f68b5266c11dbf9.js",
+    "precache-manifest.46453f432543c3d7a53af26692363a69.js": "/recipe-book/precache-manifest.46453f432543c3d7a53af26692363a69.js",
     "service-worker.js": "/recipe-book/service-worker.js",
-    "static/css/main.0aa7ad42.chunk.css.map": "/recipe-book/static/css/main.0aa7ad42.chunk.css.map",
+    "static/css/main.0d772db6.chunk.css.map": "/recipe-book/static/css/main.0d772db6.chunk.css.map",
     "static/js/2.5444dde8.chunk.js.LICENSE.txt": "/recipe-book/static/js/2.5444dde8.chunk.js.LICENSE.txt",
     "static/media/loaded-guac-veg-tacos.jpg": "/recipe-book/static/media/loaded-guac-veg-tacos.1e068f6a.jpg",
     "static/media/thai-green-curry.jpg": "/recipe-book/static/media/thai-green-curry.8424ea0f.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.52f5807f.js",
     "static/js/2.5444dde8.chunk.js",
-    "static/css/main.0aa7ad42.chunk.css",
-    "static/js/main.4f43614d.chunk.js"
+    "static/css/main.0d772db6.chunk.css",
+    "static/js/main.9b985054.chunk.js"
   ]
 }

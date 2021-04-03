@@ -16,37 +16,37 @@ function AddRecipe(props) {
           <input
             className="add-recipe-input add-name"
             name="name"
-            placeholder="recipe name"
+            placeholder="Recipe name"
             defaultValue=""
           />
           <input
             className="add-recipe-input add-source"
             name="source"
-            placeholder="recipe source"
+            placeholder="Recipe url source"
             defaultValue=""
           />
           <input
             className="add-recipe-input add-img"
             name="img"
-            placeholder="recipe image"
+            placeholder="Recipe url image"
             defaultValue=""
           />
           <textarea
             className="add-recipe-input add-ingredients"
             name="ingredients"
-            placeholder="ingredients, separated by a comma"
+            placeholder="Ingredients, comma separated"
             defaultValue=""
           />
           <textarea
             className="add-recipe-input add-measurements"
             name="measurements"
-            placeholder="measurement in order of ingredient, comma separated"
+            placeholder="Measurement in order of ingredient, comma separated"
             defaultValue=""
           />
           <textarea
             className="add-recipe-input add-instructions"
             name="instructions"
-            placeholder="instructions on how to make the dish"
+            placeholder="Instructions on how to make the dish"
             defaultValue=""
           />
           <button className="add-new-recipe">add</button>

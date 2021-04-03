@@ -192,10 +192,6 @@ class App extends React.Component {
       this.handlePopupText("Changes saved!");
 
       this.setState({ food: updatedFood });
-
-      setTimeout(() => {
-        window.location.pathname = `/${updatedFood[index].nameLink}`;
-      }, 1500);
     } else {
       this.handlePopupText("All inputs need to be filled out.");
     }

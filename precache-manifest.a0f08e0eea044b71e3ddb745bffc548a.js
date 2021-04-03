@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fd79ea53e77f6af45e45bf8a6ac501b",
+    "revision": "8816174996dd5e645b80a603a1196bed",
     "url": "/recipe-book/index.html"
   },
   {
-    "revision": "5427e5b606cbe914b167",
+    "revision": "686a1d710e435cc93682",
     "url": "/recipe-book/static/css/main.a02b636b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recipe-book/static/js/2.5444dde8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5427e5b606cbe914b167",
-    "url": "/recipe-book/static/js/main.036a6521.chunk.js"
+    "revision": "686a1d710e435cc93682",
+    "url": "/recipe-book/static/js/main.72c8502e.chunk.js"
   },
   {
     "revision": "bc080b6ba01eef4b319d",
@@ -25,7 +25,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "1e068f6a61d6d16789218ce1bb0c8ef3",
-    "url": "/recipe-book/static/media/loaded-guacamole-vegetarian-tacos.1e068f6a.jpg"
+    "url": "/recipe-book/static/media/loaded-guac-veg-tacos.1e068f6a.jpg"
   },
   {
     "revision": "8424ea0f1978168725b9dc5e549e20ce",

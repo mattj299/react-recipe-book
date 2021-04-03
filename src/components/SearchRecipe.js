@@ -46,7 +46,7 @@ function SearchRecipe(props) {
               <div className="recipe-container">
                 <div className="recipe">
                   <img
-                    className="recipe-img"
+                    className="recipe-img searched-meal-recipe-img"
                     src={meal.strMealThumb}
                     alt={meal.strMeal}
                   />
@@ -91,7 +91,7 @@ function SearchRecipe(props) {
             defaultValue=""
           />
         </form>
-        <ul>{searchedMeals}</ul>
+        <ul className="search-recipe-ul">{searchedMeals}</ul>
       </div>
     </div>
   );

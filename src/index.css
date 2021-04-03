@@ -226,7 +226,7 @@ footer {
   position: absolute;
   display: block;
   width: 25em;
-  padding: 2em;
+  padding: 1em;
   border-radius: 8px;
   background-color: #fff;
   transition: all 0.75s;
@@ -249,6 +249,8 @@ footer {
 .search-recipe.fadeIn {
   opacity: 1;
   transform: translateY(0%);
+  max-height: 100%;
+  overflow: scroll;
 }
 
 .search-recipe {
@@ -258,7 +260,7 @@ footer {
 
 .add-recipe-header,
 .search-recipe-header {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .add-recipe-header label,
@@ -274,7 +276,7 @@ footer {
   max-width: 100%;
   max-height: 50vh;
   margin: 0.5em 0;
-  padding: 0.25em;
+  padding: 1px;
 }
 
 .close-add-recipe,
@@ -282,7 +284,7 @@ footer {
   float: right;
   color: #000;
   background-color: unset;
-  padding: 0.5em;
+  padding: 0 0.5em;
 }
 
 .add-new-recipe {
@@ -316,6 +318,10 @@ footer {
 .searched-meal:hover .text-recipes-button {
   opacity: 0;
   z-index: -1;
+}
+
+.searched-meal-recipe-img {
+  height: 10em !important;
 }
 
 .save-overlay,
@@ -375,6 +381,14 @@ footer {
 
   .add-recipe-input {
     max-height: 25vh;
+  }
+}
+
+@media (max-width: 359px) {
+  .search-recipe-ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 

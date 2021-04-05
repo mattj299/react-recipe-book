@@ -176,7 +176,6 @@ class App extends React.Component {
           return measurement;
         }
       });
-      console.log(measurementsArray);
 
       updatedFood[index].name = editName.value.trim();
       updatedFood[index].nameLink = editName.value.replace(/\W/g, "");

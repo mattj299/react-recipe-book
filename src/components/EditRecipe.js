@@ -1,10 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import fallbackFoodSrc from "../images/fallbackFoodSrc.png";
+
 class EditRecipe extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { mobileWidth: false };
+    this.state = {
+      mobileWidth: false,
+      imgError: false,
+    };
+    this.onImgError = this.onImgError.bind(this);
+  }
+
+  onImgError() {
+    this.setState({ imgError: true });
   }
 
   componentDidMount() {
@@ -52,7 +62,11 @@ class EditRecipe extends React.Component {
           </>
         )}
         <div className="edit-information-image">
-          <img src={img} alt={name} />
+          <img
+            src={this.state.imgError ? fallbackFoodSrc : img}
+            onError={this.onImgError}
+            alt={name}
+          />
         </div>
         <div className="edit-information-text">
           {!mobileWidth && (

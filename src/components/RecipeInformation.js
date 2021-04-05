@@ -1,7 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import fallbackFoodSrc from "../images/fallbackFoodSrc.png";
+
 class RecipeInformation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgError: false,
+    };
+    this.onImgError = this.onImgError.bind(this);
+  }
+
+  onImgError() {
+    this.setState({ imgError: true });
+  }
+
   componentDidMount() {
     setTimeout(() => {
       document.getElementsByClassName("recipe")[0].classList.add("fadeIn");
@@ -97,7 +111,11 @@ class RecipeInformation extends React.Component {
                 </ul>
               </div>
             </div>
-            <img src={img} alt={name} />
+            <img
+              src={this.state.imgError ? fallbackFoodSrc : img}
+              alt={name}
+              onError={this.onImgError}
+            />
           </div>
           <div className="information-text">
             <div className="information-subcontainer">
@@ -139,7 +157,11 @@ class RecipeInformation extends React.Component {
                 Difficulty: <span style={{ float: "right" }}>{difficulty}</span>
               </div>
             </div>
-            <img src={img} alt={name} />
+            <img
+              src={this.state.imgError ? fallbackFoodSrc : img}
+              alt={name}
+              onError={this.onImgError}
+            />
           </div>
           <div className="information-text">
             <div className="information-subcontainer clearfix">

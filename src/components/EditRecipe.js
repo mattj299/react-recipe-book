@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 
 import fallbackFoodSrc from "../images/fallbackFoodSrc.png";
@@ -11,10 +12,7 @@ class EditRecipe extends React.Component {
       imgError: false,
     };
     this.onImgError = this.onImgError.bind(this);
-  }
-
-  onImgError() {
-    this.setState({ imgError: true });
+    this.sumbittedEdit = this.sumbittedEdit.bind(this);
   }
 
   componentDidMount() {
@@ -23,6 +21,20 @@ class EditRecipe extends React.Component {
     }, 0);
 
     this.mobileLayout();
+  }
+
+  onImgError() {
+    this.setState({ imgError: true });
+  }
+
+  sumbittedEdit(e) {
+    const { handleEditRecipeSubmit } = this.props;
+
+    handleEditRecipeSubmit(e);
+    const editName = document.querySelector(".edit-name");
+    const editNameLink = editName.value.replace(/\W/g, "");
+
+    this.props.history.replace(`/${editNameLink}`);
   }
 
   componentWillUnmount() {
@@ -47,7 +59,6 @@ class EditRecipe extends React.Component {
       measurements,
       instructions,
     } = this.props.food;
-    const { handleEditRecipeSubmit } = this.props;
 
     const { mobileWidth } = this.state;
 
@@ -81,7 +92,7 @@ class EditRecipe extends React.Component {
           <form
             className="edit-recipe-form"
             id={name}
-            onSubmit={handleEditRecipeSubmit}
+            onSubmit={this.sumbittedEdit}
           >
             <label className="edit-recipe-label">New Name</label>
             <input
@@ -140,4 +151,4 @@ class EditRecipe extends React.Component {
   }
 }
 
-export default EditRecipe;
+export default withRouter(EditRecipe);

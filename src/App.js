@@ -500,7 +500,7 @@ class App extends React.Component {
               })}
             </Switch>
           </div>
-          <Footer />
+          <Footer textRecipes={this.state.textRecipes} />
         </>
       </Router>
     );

@@ -95,37 +95,25 @@ class Header extends React.Component {
     let LinkToTextRecipes;
     let LinkToTextRecipesMobile;
 
-    if (textRecipes) {
-      LinkToTextRecipes = (
-        <Link to="/" onClick={displayTextRecipes}>
-          <i className="fas fa-th"></i>
-        </Link>
-      );
-    } else {
-      LinkToTextRecipes = (
-        <Link to="/textRecipes" onClick={displayTextRecipes}>
-          <i className="fas fa-list-ul"></i>
-        </Link>
-      );
-    }
+    LinkToTextRecipes = (
+      <Link
+        to={textRecipes ? "/" : "/textRecipes"}
+        onClick={displayTextRecipes}
+      >
+        <i className={textRecipes ? "fas fa-th" : "fas fa-list-ul"}></i>
+      </Link>
+    );
 
-    if (textRecipes) {
-      LinkToTextRecipesMobile = (
-        <Link to="/" onClick={displayTextRecipes}>
-          <li className="dropdown-ul-item" onClick={this.toggleActive}>
-            Change home view
-          </li>
-        </Link>
-      );
-    } else {
-      LinkToTextRecipesMobile = (
-        <Link to="/textRecipes" onClick={displayTextRecipes}>
-          <li className="dropdown-ul-item" onClick={this.toggleActive}>
-            Change home view
-          </li>
-        </Link>
-      );
-    }
+    LinkToTextRecipesMobile = (
+      <Link
+        to={textRecipes ? "/" : "/textRecipes"}
+        onClick={displayTextRecipes}
+      >
+        <li className="dropdown-ul-item" onClick={this.toggleActive}>
+          Change home view
+        </li>
+      </Link>
+    );
 
     return (
       <>

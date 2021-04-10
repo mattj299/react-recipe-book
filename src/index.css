@@ -398,33 +398,22 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
 }
 
 .home-container .recipe {
   width: 15.5em;
-  height: 21em;
-  overflow-y: scroll;
-}
-
-/** Scrollbar for overflow **/
-.home-container .recipe::-webkit-scrollbar {
-  width: 3px;
-}
-
-.home-container .recipe::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-
-.home-container .recipe::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /** Recipes **/
 .recipe-link {
   color: #000;
-  height: 100%;
   margin: 0.5em;
+  display: flex;
+}
+
+.recipe-container {
+  display: flex;
 }
 
 .recipe {

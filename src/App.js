@@ -11,73 +11,11 @@ import RecipeInformation from "./components/RecipeInformation";
 import EditRecipe from "./components/EditRecipe";
 import Footer from "./components/Footer";
 
-import LoadedGuacTacos from "./images/loaded-guac-veg-tacos.jpg";
-import GreenCurry from "./images/thai-green-curry.jpg";
-
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      food: [
-        {
-          name: "Loaded Guacamole Tacos",
-          nameLink: "LoadedGuacamoleTacos",
-          ingredients: [
-            "fresh avocados",
-            "black beans",
-            "jalapenos",
-            "tomatoes or tomatillos",
-            "corn or small flour tortillas",
-            "corn",
-            "lime",
-            "cilantro",
-          ],
-          measurements: [
-            "2",
-            "1/2 cup",
-            "1 tablespoon",
-            "1",
-            "3",
-            "1/2 cup",
-            "1/2",
-            "4 tablespoons",
-          ],
-          instructions:
-            "Mash the avocado in a medium bowl with a fork (or molcajete) until it reaches your desired consistency, chunky or smooth. Add a small squeeze each of lime and lemon juice. Mix well and taste. Add more lime juice, lemon juice, and salt as you like. Add the black bean ingredients to a 2 quart sauce pot and heat over medium-low until hot. Turn off the heat and allow to cool to a very warm, eatable temp. If tortillas aren't soft and pliable (or if you like your tortillas warm), stack them on microwaveable plate, separate with paper towels, heat for 20 to 30 seconds. Line half of each tortilla with lettuce. Spoon the black bean mixture over the lettuce (on half of the tortilla). Spoon guacamole on the other half. Top with a few shakes of hot sauce (optional) and a sprinkle of cilantro. Serve with lemon and lime wedges.",
-          img: LoadedGuacTacos,
-          source:
-            "http://soupaddict.com/2014/06/loaded-guacamole-vegetarian-tacos/",
-        },
-        {
-          name: "Green Curry",
-          nameLink: "GreenCurry",
-          ingredients: [
-            "rice",
-            "coconut milk",
-            "carrots",
-            "onions",
-            "garlic",
-            "green curry paste",
-            "asparagus",
-            "cilantro",
-          ],
-          measurements: [
-            "1 cup",
-            "1/2 cup",
-            "4",
-            "1",
-            "3",
-            "3 tablespoons",
-            "5",
-            "4 tablespoons",
-          ],
-          instructions:
-            "To cook the rice, bring a large pot of water to boil. Add the rinsed rice and continue boiling for 30 minutes, reducing heat as necessary to prevent overflow. Remove from heat, drain the rice and return the rice to pot. Cover and let the rice rest for 10 minutes or longer, until you’re ready to serve. Warm a large skillet with deep sides over medium heat. Once it’s hot, add a couple teaspoons of oil. Cook the onion, ginger and garlic with a sprinkle of salt for about 5 minutes, stirring often. Add the asparagus and carrots and cook for 3 more minutes, stirring occasionally. Then add the curry paste and cook, stirring often, for 2 minutes. Pour the coconut milk into the pan, along with ½ cup water and 1 ½ teaspoons sugar. Bring the mixture to a simmer. Reduce heat as necessary to maintain a gentle simmer and cook until the carrots and asparagus are tender and cooked through, about 5 to 10 minutes. Once the vegetables are done cooking, stir the spinach into the mixture and cook until the spinach has wilted, about 30 seconds. Remove the curry from heat and season with rice vinegar and soy sauce. Add salt and red pepper flakes (optional), to taste. Divide rice and curry into bowls and garnish with chopped cilantro and a sprinkle of red pepper flakes, if you’d like.",
-          img: GreenCurry,
-          source:
-            "http://cookieandkate.com/2015/thai-green-curry-with-spring-vegetables/",
-        },
-      ],
+      food: [],
       textRecipes: false,
       popupText: "",
     };
@@ -96,6 +34,13 @@ class App extends React.Component {
     if (localFood != null) {
       // Parses it from json string to js object then set the state to it
       this.setState({ food: JSON.parse(localFood) });
+    }
+    // If null is true that means local storage is empty, so call function 4 times to populate the screen with random recipes
+    else {
+      this.handleAddRandomRecipe();
+      this.handleAddRandomRecipe();
+      this.handleAddRandomRecipe();
+      this.handleAddRandomRecipe();
     }
 
     if (document.URL.includes("/textRecipes")) {
